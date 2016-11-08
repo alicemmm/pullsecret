@@ -107,12 +107,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void pullRSA(String secret) {
-        Log.e("tag","secret="+secret);
-
         Map<String, Object> keyMap = RSA.initKey();
         //公钥
         byte[] publicKey = RSA.getPublicKey(keyMap);
-
         //私钥
         byte[] privateKey = RSA.getPrivateKey(keyMap);
 
